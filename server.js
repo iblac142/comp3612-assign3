@@ -18,8 +18,8 @@ router.handleArtistsByCountry(app);
 router.handleAllGalleries(app);
 router.handleGalleriesByCountry(app);
 
-let port = 8080;
-app.listen(port, ()=> {
-	console.log("Server running at port= " + port);
-});
+http = require("http")
+const server = http.createServer((req, resp) => {
+})
+
 
