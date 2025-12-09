@@ -18,8 +18,8 @@ router.handleArtistsByCountry(app);
 router.handleAllGalleries(app);
 router.handleGalleriesByCountry(app);
 
-http = require("http")
-const server = http.createServer((req, resp) => {
-})
-
+const HOST = '0.0.0.0';
+app.listen(config.port, HOST, ()=> {
+	console.log("Server running at" + HOST + ":" + config.port);
+});
 
