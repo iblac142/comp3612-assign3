@@ -19,7 +19,8 @@ router.handleAllGalleries(app);
 router.handleGalleriesByCountry(app);
 
 const HOST = '0.0.0.0';
-app.listen(config.port, HOST, ()=> {
+app.listen(HOST, ()=> {
 	console.log("Server running at" + HOST + ":" + config.port);
 });
+
 
