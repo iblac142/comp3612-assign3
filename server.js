@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 4000;
 
 const path = require('path');
 app.use('/static',express.static(path.join(__dirname,'public')));
@@ -18,10 +19,7 @@ router.handleArtistsByCountry(app);
 router.handleAllGalleries(app);
 router.handleGalleriesByCountry(app);
 
-const HOST = '0.0.0.0';
-app.listen(HOST, ()=> {
-	console.log("Server running at" + HOST);
+app.listen(port, ()=> {
+	console.log("Server running at " + port);
 });
-
-
 
